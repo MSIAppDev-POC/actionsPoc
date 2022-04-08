@@ -72,7 +72,7 @@ jobs:
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           HEROKU_APP_NAME: "actionspoc" #Must be unique in Heroku
           HEROKU_EMAIL: "gimbasuleiman@gmail.com"
-        
+          buildpack: "https://github.com/HashNuke/heroku-buildpack-elixir.git"
         
         
         #if: github.ref == 'refs/heads/main' && job.status == 'success'
