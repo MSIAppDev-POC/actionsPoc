@@ -40,10 +40,10 @@ jobs:
         run: gem install bundler
       - name: bundler jobs
         run: bundle install --jobs 4 --retry 3
-      - name: db prepare
-        run: bundle exec rails db:prepare
-      #- name: rails test
-      # run: bundle exec rails test
+      #- name: db prepare
+        #run: bundle exec rails db:prepare
+      - name: rails test
+        run: bundle exec rails test
 
   lint-test:
     runs-on: ubuntu-latest
