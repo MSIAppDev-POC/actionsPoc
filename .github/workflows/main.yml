@@ -74,6 +74,6 @@ jobs:
           HEROKU_EMAIL: "gimbasuleiman@gmail.com"
           buildpack: "https://github.com/HashNuke/heroku-buildpack-elixir.git"
 
-      - name: Push to Heroku
-        run: git push -f https://heroku:${{ secrets.HEROKU_API_TOKEN }}@git.heroku.com/${{ secrets.HEROKU_APP_STAGING }}.git origin/master:master
+      #- name: Push to Heroku
+      #  run: git push -f https://heroku:${{ secrets.HEROKU_API_TOKEN }}@git.heroku.com/${{ secrets.HEROKU_APP_STAGING }}.git origin/master:master
         
